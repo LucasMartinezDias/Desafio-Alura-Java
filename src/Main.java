@@ -19,6 +19,7 @@ public class Main {
         System.out.println("\nNome: " + usuario);
         System.out.println("\nTipo de conta: " + tipoConta);
         System.out.println("\nSaldo inicial: " + saldo);
+        System.out.println("Teste de commit");
         System.out.println("***************************************");
 
         Scanner sc = new Scanner(System.in);
