@@ -30,6 +30,22 @@ public class Main {
 
             if (opcao == 1) {
                 System.out.println("O saldo atualizado é: " + saldo);
+            } else if (opcao == 2) {
+                System.out.println("Qual o valor que deseja transferir");
+                double valor = sc.nextDouble();
+                if (valor > saldo) {
+                    System.out.println("Não há saldo suficiente");
+                } else {
+                    saldo -= valor;
+                    System.out.println("Novo saldo " + saldo);
+                }
+            } else if (opcao ==3) {
+                System.out.println("Valor recebido: ");
+                double valor = sc.nextDouble();
+                saldo += valor;
+                System.out.println("Novo saldo " + saldo);
+            } else if (opcao != 4) {
+                System.out.println("Opcção invalida");
             }
         }
     }
